@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1ue-7e-a8A">
-                                <rect key="frame" x="0.0" y="50" width="600" height="550"/>
+                                <rect key="frame" x="0.0" y="30" width="600" height="570"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YyQ-sg-rZ7">
                                         <rect key="frame" x="230" y="0.0" width="141" height="30"/>
@@ -30,7 +30,7 @@
                                         </connections>
                                     </button>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dlV-9N-ofC">
-                                        <rect key="frame" x="0.0" y="50" width="600" height="500"/>
+                                        <rect key="frame" x="0.0" y="50" width="600" height="520"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="No data to display: press button" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="v4h-pu-y08">
                                                 <rect key="frame" x="8" y="0.0" width="584" height="850"/>
@@ -63,7 +63,7 @@
                             <constraint firstItem="1ue-7e-a8A" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bEu-gP-lch"/>
                             <constraint firstAttribute="bottom" secondItem="1ue-7e-a8A" secondAttribute="bottom" id="fvy-zl-wUj"/>
                             <constraint firstAttribute="trailing" secondItem="1ue-7e-a8A" secondAttribute="trailing" id="gWH-eN-Spm"/>
-                            <constraint firstItem="1ue-7e-a8A" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="50" id="uCx-U1-62G"/>
+                            <constraint firstItem="1ue-7e-a8A" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="30" id="uCx-U1-62G"/>
                         </constraints>
                     </view>
                     <connections>
