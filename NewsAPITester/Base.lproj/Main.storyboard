@@ -19,49 +19,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1ue-7e-a8A">
-                                <rect key="frame" x="0.0" y="30" width="600" height="570"/>
+                                <rect key="frame" x="0.0" y="30" width="600" height="562"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YyQ-sg-rZ7">
                                         <rect key="frame" x="230" y="0.0" width="141" height="30"/>
                                         <color key="backgroundColor" red="0.99397447989429899" green="0.7852479986327805" blue="1" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="  Send GET request  "/>
+                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="330" y="0.0" width="141" height="20"/>
+                                        </variation>
                                         <connections>
                                             <action selector="sendButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Kl-CS-3lv"/>
                                         </connections>
                                     </button>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dlV-9N-ofC">
-                                        <rect key="frame" x="0.0" y="50" width="600" height="520"/>
-                                        <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="No data to display: press button" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="v4h-pu-y08">
-                                                <rect key="frame" x="8" y="0.0" width="584" height="850"/>
-                                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="850" id="d5B-Gh-n9o"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
-                                            </textView>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="v4h-pu-y08" secondAttribute="bottom" id="Ths-Ty-2wX"/>
-                                            <constraint firstItem="v4h-pu-y08" firstAttribute="top" secondItem="dlV-9N-ofC" secondAttribute="top" id="XjO-w5-fuv"/>
-                                            <constraint firstItem="v4h-pu-y08" firstAttribute="leading" secondItem="dlV-9N-ofC" secondAttribute="leadingMargin" id="l87-6e-DP8"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="v4h-pu-y08" secondAttribute="trailing" id="ngD-R2-Gen"/>
-                                            <constraint firstItem="v4h-pu-y08" firstAttribute="centerX" secondItem="dlV-9N-ofC" secondAttribute="centerX" id="uMC-QS-Jgc"/>
-                                        </constraints>
-                                    </scrollView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="No data to display: press button" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="v4h-pu-y08">
+                                        <rect key="frame" x="10" y="50" width="580" height="512"/>
+                                        <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="8" y="40" width="784" height="730"/>
+                                        </variation>
+                                    </textView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="dlV-9N-ofC" secondAttribute="trailing" id="FRj-AA-KKp"/>
-                                    <constraint firstItem="dlV-9N-ofC" firstAttribute="leading" secondItem="1ue-7e-a8A" secondAttribute="leading" id="IaB-pa-9LD"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="v4h-pu-y08" secondAttribute="trailing" constant="10" id="3fJ-A9-2kV"/>
+                                    <constraint firstItem="v4h-pu-y08" firstAttribute="leading" secondItem="1ue-7e-a8A" secondAttribute="leadingMargin" constant="10" id="xqx-9s-nug"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="1ue-7e-a8A" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bEu-gP-lch"/>
-                            <constraint firstAttribute="bottom" secondItem="1ue-7e-a8A" secondAttribute="bottom" id="fvy-zl-wUj"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="1ue-7e-a8A" secondAttribute="bottom" constant="8" id="fvy-zl-wUj"/>
                             <constraint firstAttribute="trailing" secondItem="1ue-7e-a8A" secondAttribute="trailing" id="gWH-eN-Spm"/>
                             <constraint firstItem="1ue-7e-a8A" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="30" id="uCx-U1-62G"/>
                         </constraints>
